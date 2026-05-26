@@ -1,0 +1,13 @@
+GET http://localhost:3000
+
+###
+
+GET http://localhost:3000/health
+
+###
+
+GET http://localhost:3000/warning
+
+###
+
+GET http://localhost:3000/error

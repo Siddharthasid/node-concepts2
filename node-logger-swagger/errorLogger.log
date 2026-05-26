@@ -1,0 +1,110 @@
+{
+  meta: {
+    req: {
+      url: '/error',
+      headers: {
+        'user-agent': 'vscode-restclient',
+        'accept-encoding': 'gzip, deflate',
+        host: 'localhost:3000',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/error',
+      query: [Object: null prototype] {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 5
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'HTTP GET /error',
+  timestamp: '2026-05-26T22:11:13.766Z'
+}
+{
+  meta: {
+    req: {
+      url: '/error',
+      headers: {
+        'user-agent': 'vscode-restclient',
+        'accept-encoding': 'gzip, deflate',
+        host: 'localhost:3000',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/error',
+      query: [Object: null prototype] {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 1
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'HTTP GET /error',
+  timestamp: '2026-05-26T22:11:24.167Z'
+}
+{
+  meta: {
+    req: {
+      url: '/error',
+      headers: {
+        'user-agent': 'vscode-restclient',
+        'accept-encoding': 'gzip, deflate',
+        host: 'localhost:3000',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/error',
+      query: [Object: null prototype] {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 1
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'HTTP GET /error',
+  timestamp: '2026-05-26T22:11:25.969Z'
+}
+{
+  meta: {
+    req: {
+      url: '/error',
+      headers: {
+        'user-agent': 'vscode-restclient',
+        'accept-encoding': 'gzip, deflate',
+        host: 'localhost:3000',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/error',
+      query: [Object: null prototype] {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 1
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'HTTP GET /error',
+  timestamp: '2026-05-26T22:11:26.932Z'
+}
+{
+  meta: {
+    req: {
+      url: '/error',
+      headers: {
+        'user-agent': 'vscode-restclient',
+        'accept-encoding': 'gzip, deflate',
+        host: 'localhost:3000',
+        connection: 'keep-alive'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/error',
+      query: [Object: null prototype] {}
+    },
+    res: { statusCode: 500 },
+    responseTime: 1
+  },
+  level: '\x1B[31merror\x1B[39m',
+  message: 'HTTP GET /error',
+  timestamp: '2026-05-26T22:11:27.906Z'
+}
