@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  node-logger-swagger:
+    build:
+      context: ./node-logger-swagger
+      dockerfile: Dockerfile
+    container_name: node-logger-swagger
+    ports:
+      - "3000:3000"
+    environment:
+      - DBCONFIG=mongodb://mongo:27017/logs
+    depends_on:
+      - mongo
+
+
+volumes:
+  mongo-data:
