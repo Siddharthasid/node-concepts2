@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 
 /**
  * @swagger
- * /example:
+ * /:
  *   get:
  *     summary: hello world
  *     responses:
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 
 /**
  * @swagger
- * /example:
+ * /health:
  *   get:
  *     summary: health check
  *     responses:
