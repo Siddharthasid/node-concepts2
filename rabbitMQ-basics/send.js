@@ -8,12 +8,19 @@ const queue = "message";
 const message = "Hi, Developers!"
 
 await channel.assertQueue(queue, { durable: false });
-channel.sendToQueue(queue, Buffer.from(message));
 
-setInterval(() => {
-    let timeStamp = new Date().toLocaleTimeString();
-    let customMsg = `Hi, Developers! ${timeStamp}`;
-    channel.sendToQueue(queue, Buffer.from(customMsg));
-}, 2000);
+// channel.sendToQueue(queue, Buffer.from(message));
 
-console.log("Message sent");
+// setInterval(() => {
+//     let timeStamp = new Date().toLocaleTimeString();
+//     let customMsg = `Hi, Developers! ${timeStamp}`;
+//     channel.sendToQueue(queue, Buffer.from(customMsg));
+// }, 2000);
+
+// console.log("Message sent");
+
+await channel.assertExchange('logs', 'fanout', {durable: false});
+
+channel.bindQueue(queue, 'logs', '');
+
+channel.publish('logs', '', Buffer.from(message));
